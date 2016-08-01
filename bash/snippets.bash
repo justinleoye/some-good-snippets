@@ -1,0 +1,6 @@
+# deal with string like following
+# ...
+# [24040] I18n Exception: translation missing: en.activerecord.attributes.upfront_plan._actions
+# ...
+# 
+cat */* | grep "I18n" | cut -d ":" -f 3 | sort | uniq > i18n-exception-tranlation-missing.txt
